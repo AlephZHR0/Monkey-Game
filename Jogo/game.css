@@ -1,0 +1,32 @@
+#board {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 5vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.score p, .timer p {
+    color: yellow;
+    font-size: 5vh;
+    text-align: right;
+    vertical-align: middle;
+}

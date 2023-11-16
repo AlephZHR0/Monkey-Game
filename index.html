@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Menu</title>
     <link rel="icon" href="Imgs_e_Videos_e_Fontes/icon_macaco.png">
-    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <h1>Monkey Game</h1>
-    
     <div class="flex_row">
         <img src="Imgs_e_Videos_e_Fontes/monkey_1.png" alt="monkey" width="200" height="200">
         <div class="flex_column">
@@ -31,39 +30,6 @@
         <img id="inverso" src="Imgs_e_Videos_e_Fontes/monkey_1.png" alt="monkey" width="200" height="200">
     </div>
     <img id="marca" src="Imgs_e_Videos_e_Fontes/Marca.png" alt="marca" width="100">
-    <script>
-        document.getElementById("play").addEventListener("click", function() {
-        var lista = document.getElementById("listaDificuldades");
-        if (lista.style.display === "none") {
-            lista.style.display = "block";
-        } else {
-            lista.style.display = "none";
-        }
-        });
-
-        explicacao = function() {
-            window.location.href="Explicação/explicacao.html";
-        }
-
-        creditos = function() {
-            window.location.href = "Creditos/creditos.html";
-        }
-
-        easy = function() {
-            window.location.href = "Jogo/game.html?rows=3&cols=3";
-        }
-
-        medium = function() {
-            window.location.href = "Jogo/game.html?rows=4&cols=4";
-        }
-
-        hard = function() {
-            window.location.href = "Jogo/game.html?rows=5&cols=5";
-        }
-
-        monkey = function() {
-            window.location.href = "Jogo/game.html?rows=5&cols=8";
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
