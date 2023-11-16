@@ -1,0 +1,104 @@
+/* Baixando a fonte Super Mario 256 */
+@font-face {
+    font-family: 'Super Mario 256';
+    src: url('Imgs_e_Videos_e_Fontes/SuperMario256.ttf') format('woff2'),
+         url('Imgs_e_Videos_e_Fontes/SuperMario256.ttf') format('woff');
+}
+/* Configurações da página */
+body{
+    background-image: url("Imgs_e_Videos_e_Fontes/Teste.jpg");
+}
+h1{
+    color: orange;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Super Mario 256';
+    text-shadow: 2px 2px 4px white;
+    border: 2px solid black;
+}
+h2{
+    font-family: 'Super Mario 256';
+    text-align: center;
+}
+#listaDificuldades{
+    color: blue;
+    font-size: 1,5rem;
+    text-align: center;
+    font-family: 'Super Mario 256';
+}
+button{
+    width: 200px;
+    background-color: orange;
+    border: 2px solid #000000;
+    color: #000000; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    font-family: 'Super Mario 256', Arial, Helvetica, sans-serif; 
+    box-shadow: 3px 3px #888888;
+}
+/* Localização na tela */
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+/*Sobre as imgens na pagina*/
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+#inverso{
+    transform: scaleX(-1);
+}
+#marca{
+    margin: 0px 10px 5px 10px;
+    padding: 0px;
+    float: right;
+}
+@media (max-width: 700px){
+    h1{
+        font-size: 5rem;
+    }
+    .flex_row{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .flex_3{
+        flex-direction: row;
+    }
+    #inverso{
+        width: 0px;
+        height: 0px;
+    }
+    #marca{
+        margin: 20px;
+    }
+}
+@media (max-width: 500px){
+    h1{
+        font-size: 3rem;
+    }
+    .flex_row{
+        flex-direction: column;
+        height: 95vh;
+    }
+}

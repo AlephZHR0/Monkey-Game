@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Super Mario 256';
+    src: url('../Imgs_e_Videos_e_Fontes/SuperMario256.ttf') format('woff2'),
+         url('../Imgs_e_Videos_e_Fontes/SuperMario256.ttf') format('woff');
+}
+body{
+    background-image: url("../Imgs_e_Videos_e_Fontes/Teste.jpg");
+    font-size: 20px;
+    color: #fff;
+}
+h1{
+    color: orange;
+    font-family: 'Super Mario 256';
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px white;
+}
+
+h2{
+    color: orange;
+    font-family: 'Super Mario 256';
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px white;
+}
+h3{
+    text-align: center;
+}
+
+p{
+    margin: 50px;
+    text-align: justify;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: #6d6d6d90;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+}
+
+iframe{
+    margin: 10px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+#marca{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    float: right;
+}
+
+@media (max-width: 1100px){
+    .flex{
+        flex-direction: column;
+    }
+    iframe{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 30px;
+        text-shadow: 1px 1px 2px white;
+    }
+    h2{
+        font-size: 20px;
+        text-shadow: 1px 1px 2px white;
+    }
+    p{
+        font-size: 15px;
+    }
+    iframe{
+        width: 200px;
+        height: 100px;
+    }
+}

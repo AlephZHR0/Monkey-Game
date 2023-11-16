@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Super Mario 256';
+    src: url('../Imgs_e_Videos_e_Fontes/SuperMario256.ttf') format('woff2'),
+         url('../Imgs_e_Videos_e_Fontes/SuperMario256.ttf') format('woff');
+}
+body{
+    background-image: url("../Imgs_e_Videos_e_Fontes/Teste.jpg");
+    font-size: 20px;
+    color: #fff;
+}
+h1{
+    color: orange;
+    font-family: 'Super Mario 256', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px white;
+}
+.bloco{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: #6d6d6d90;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+}
+
+img{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    float: right;
+}
